@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost','Roboto', sans-serif;
+    font-weight: 700;
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+
+nav h5{
+    display: none;
+    cursor: pointer;
+}
+h4{
+    cursor: pointer;
+}
+
+.slider-text h1{
+    position: relative;
+}
+
+.slider-text h1 span{
+    position: absolute;
+    left: -60px;
+    top: 0;
+    font-size: 1.3rem;
+}
+
+.slider-text::-webkit-scrollbar{
+    height: 6px;
+    background: transparent;
+}
+
+.slider-text::-webkit-scrollbar-thumb{
+    background: orange;
+}
+
+.bg-img{
+    height: calc(100% - 400px);
+    width: 100%;
+    background-image: url(../img/fashion.jpg);
+    background-position: 0 30%;
+    background-size: cover;
+}
+
+
+@media (max-width:768px) {
+    .nav-2 h4:nth-of-type(even){
+        display: none;
+    }
+    .nav-right h4{
+        display: none;
+    }
+    nav h5{
+        display: block;
+    }
+}
+
+
+@media (max-width:640px) {   
+    .slider-text h1 span{
+        left: -25px;
+        top: -10px;
+        font-size: 1rem;
+    }
+    .slider-text::-webkit-scrollbar{
+        height: 4px;
+        background: transparent;
+    }
+    .bg-img{
+        height: calc(100% - 272px);
+        width: 100%;
+        background-image: url(../img/fashion.jpg);
+        background-position: 20% 30%;
+        background-size: cover;
+    }
+    
+}
